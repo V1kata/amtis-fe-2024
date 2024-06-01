@@ -32,35 +32,35 @@ function receiptHtml(data) {
                     <div class="vitamins">
                         <div class="mini">
                             <p>КАЛОРИИ</p>
-                            <h1>${data.nutritions.calories}</h1>
+                            <h1>${data.nutrition.calories}</h1>
                         </div>
                         <div class="mini">
                             <p>ОБЩО МАЗНИНИ</p>
-                            <h1>${data.nutritions.totalFat}g</h1>
+                            <h1>${data.nutrition.totalFat}g</h1>
                         </div>
                         <div class="mini">
                             <p>НАСИТЕНИ МАЗНИНИ</p>
-                            <h1>${data.nutritions.saturatedFat}g</h1>
+                            <h1>${data.nutrition.saturatedFat}g</h1>
                         </div>
                         <div class="mini">
                             <p>ОБЩО ВЪГЛЕХИДРАТИ</p>
-                            <h1>${data.nutritions.totalCarbs}g</h1>
+                            <h1>${data.nutrition.totalCarbs}g</h1>
                         </div>
                         <div class="mini">
                             <p>ПРОТЕИН</p>
-                            <h1>${data.nutritions.protein}g</h1>
+                            <h1>${data.nutrition.protein}g</h1>
                         </div>
                         <div class="mini">
                             <p>ЗАХАРИ</p>
-                            <h1>${data.nutritions.sugars}g</h1>
+                            <h1>${data.nutrition.sugars}g</h1>
                         </div>
                         <div class="mini">
                             <p>НАТРИЙ</p>
-                            <h1>${data.nutritions.sodium}mg</h1>
+                            <h1>${data.nutrition.sodium}mg</h1>
                         </div>
                         <div class="mini">
                             <p>ХОЛЕСТЕРОЛ</p>
-                            <h1>${data.nutritions.cholesterol}mg</h1>
+                            <h1>${data.nutrition.cholesterol}mg</h1>
                         </div>
                     </div>
                 </div>`
