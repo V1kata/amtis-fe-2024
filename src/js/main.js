@@ -1,1 +1,5 @@
-// Продължи с твоя vanilla JavaScript код тук.
+import { getFood } from "./getFood";
+import { receipt } from "./receipts";
+
+getFood();
+receipt()

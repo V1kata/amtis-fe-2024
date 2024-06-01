@@ -6,12 +6,12 @@ ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
-    gap: 8px;
+    gap: 10px;
 }
 
 nav ul li a {
