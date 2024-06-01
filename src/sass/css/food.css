@@ -48,7 +48,7 @@
     border: none;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .card-wrapper {
         flex-direction: column;
     }
@@ -56,4 +56,4 @@
     .card {
         flex: 0 0 0;
     }
-} 
+}  */

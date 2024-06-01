@@ -1,0 +1,21 @@
+.media .media-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em 27%;
+}
+
+.media .media-wrapper h1 {
+    font-family: 'Nano-serif';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.media .media-wrapper p:first-child {
+    margin: 0;
+}
+
+.media .media-wrapper button {
+    align-self: flex-start;
+    margin: 2em 0;
+}

@@ -8,7 +8,14 @@ ul {
     list-style: none;
     justify-content: space-between;
     align-items: center;
+}
+
+nav ul {
     gap: 8px;
+}
+
+nav ul li a {
+    color: #9d5c32;
 }
 
 ul li {
@@ -16,6 +23,5 @@ ul li {
 }
 
 ul li a {
-    color: #9d5c32;
     text-decoration: none;
 }

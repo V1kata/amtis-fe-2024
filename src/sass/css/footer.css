@@ -1,0 +1,32 @@
+.footer {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .wallnut img {
+    position: relative;
+    width: 10%;
+    margin: auto;
+}
+
+.footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.footer ul li {
+    margin: 0 1em;
+}
+
+.footer ul li a {
+    color: black;
+}
+
+.footer .copyright {
+    color: grey;
+}

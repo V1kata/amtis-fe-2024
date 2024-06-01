@@ -6,11 +6,14 @@
 @import url('./css/receipt.css');
 @import url('./css/reviews.css');
 @import url('./css/qna.css');
+@import url('./css/media.css');
+@import url('./css/footer.css');
 
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #fdf8ec;
 }
