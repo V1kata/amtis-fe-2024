@@ -2,7 +2,6 @@ export async function receipt() {
     let req = await fetch('http://localhost:4000/desserts');
     let data = await req.json();
     let html = '';
-    console.log(data)
     for (let res of data) {
         html += receiptHtml(res)
     }
@@ -11,7 +10,6 @@ export async function receipt() {
 }
 
 function receiptHtml(data) {
-    console.log(data)
     return `
     <div class="product">
                     <div class="product-img">
