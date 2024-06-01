@@ -1,12 +1,31 @@
 @media (max-width: 1000px) {
     header {
-        padding: 0;
+        padding: 2em 0;
     }
 
+    header ul li:first-child {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .chef-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    
     .food .card-wrapper {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        width: 100%;
     }
 
     .food .card-wrapper .card {
@@ -22,6 +41,14 @@
     .reviews {
         display: flex;
         flex-direction: column;
+        position: relative;
+        width: 100vw;
+        left: 20%;
+    }
+
+    .qna .qna-left {
+        font-size: 15px;
+        text-wrap: wrap;
     }
 
     .qna .qna-sec {

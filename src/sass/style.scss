@@ -9,6 +9,15 @@
 @import url('./css/footer.css');
 @import url('./css/responsive.css');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -18,5 +27,4 @@ body {
     align-content: center;
     flex-wrap: wrap;
     background-color: #fdf8ec;
-    width: 100%;
 }
