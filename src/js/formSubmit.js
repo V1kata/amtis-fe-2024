@@ -16,7 +16,7 @@ export async function onSubmit(e) {
         body: JSON.stringify(formData)
     });
 
-    if(req.ok == true) {
+    if (req.ok == true) {
         name.value = '';
         phone.value = '';
         email.value = '';

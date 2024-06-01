@@ -6,7 +6,13 @@
     .food .card-wrapper {
         padding: 0;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .food .card-wrapper .card {
+        flex: 1 0 auto;
+        justify-content: space-evenly;
     }
 
     .receipt .receipt-wrapper .product {
@@ -15,6 +21,16 @@
     }
 
     .reviews {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qna .qna-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chef .chef-wrapper {
         display: flex;
         flex-direction: column;
     }
