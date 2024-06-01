@@ -1,102 +1,391 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bg">
-    <head>
-        <meta charset="UTF-8" />
 
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<head>
+    <meta charset="UTF-8" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Krystallino" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <title>Krystallino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Krystallino" />
 
-        <link rel="preload" href="/fonts/Manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin />
-        <link rel="preload" href="/fonts/Manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
-        <link rel="preload" href="/fonts/Manrope/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin />
-        <link rel="preload" href="/fonts/Manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-        <link rel="preload" href="/fonts/Manrope/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Krystallino</title>
 
-        <link rel="preload" href="/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Manrope/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Manrope/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Manrope/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Manrope/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-        <style type="text/css">
-            @font-face {
-                font-family: 'Manrope';
-                src: url('/fonts/Manrope/Manrope-Light.eot') format('embedded-opentype'),
-                    url('/fonts/Manrope/Manrope-Light.woff2') format('woff2'),
-                    url('/fonts/Manrope/Manrope-Light.woff') format('woff'),
-                    url('/fonts/Manrope/Manrope-Light.ttf') format('truetype'),
-                    url('/fonts/Manrope/Manrope-Light.svg#Manrope') format('svg');
-                font-weight: 300;
-                font-style: normal;
-                font-display: swap;
-            }
+    <link rel="preload" href="/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2" as="font" type="font/woff2"
+        crossorigin />
 
-            @font-face {
-                font-family: 'Manrope';
-                src: url('/fonts/Manrope/Manrope-Regular.eot') format('embedded-opentype'),
-                    url('/fonts/Manrope/Manrope-Regular.woff2') format('woff2'),
-                    url('/fonts/Manrope/Manrope-Regular.woff') format('woff'),
-                    url('/fonts/Manrope/Manrope-Regular.ttf') format('truetype'),
-                    url('/fonts/Manrope/Manrope-Regular.svg#Manrope') format('svg');
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-            }
+    <style type="text/css">
+        @font-face {
+            font-family: 'Manrope';
+            src: url('/fonts/Manrope/Manrope-Light.eot') format('embedded-opentype'),
+                url('/fonts/Manrope/Manrope-Light.woff2') format('woff2'),
+                url('/fonts/Manrope/Manrope-Light.woff') format('woff'),
+                url('/fonts/Manrope/Manrope-Light.ttf') format('truetype'),
+                url('/fonts/Manrope/Manrope-Light.svg#Manrope') format('svg');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
 
-            @font-face {
-                font-family: 'Manrope';
-                src: url('/fonts/Manrope/Manrope-Medium.eot') format('embedded-opentype'),
-                    url('/fonts/Manrope/Manrope-Medium.woff2') format('woff2'),
-                    url('/fonts/Manrope/Manrope-Medium.woff') format('woff'),
-                    url('/fonts/Manrope/Manrope-Medium.ttf') format('truetype'),
-                    url('/fonts/Manrope/Manrope-Medium.svg#Manrope') format('svg');
-                font-weight: 500;
-                font-style: normal;
-                font-display: swap;
-            }
+        @font-face {
+            font-family: 'Manrope';
+            src: url('/fonts/Manrope/Manrope-Regular.eot') format('embedded-opentype'),
+                url('/fonts/Manrope/Manrope-Regular.woff2') format('woff2'),
+                url('/fonts/Manrope/Manrope-Regular.woff') format('woff'),
+                url('/fonts/Manrope/Manrope-Regular.ttf') format('truetype'),
+                url('/fonts/Manrope/Manrope-Regular.svg#Manrope') format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
 
-            @font-face {
-                font-family: 'Manrope';
-                src: url('/fonts/Manrope/Manrope-SemiBold.eot') format('embedded-opentype'),
-                    url('/fonts/Manrope/Manrope-SemiBold.woff2') format('woff2'),
-                    url('/fonts/Manrope/Manrope-SemiBold.woff') format('woff'),
-                    url('/fonts/Manrope/Manrope-SemiBold.ttf') format('truetype'),
-                    url('/fonts/Manrope/Manrope-SemiBold.svg#Manrope') format('svg');
-                font-weight: 600;
-                font-style: normal;
-                font-display: swap;
-            }
+        @font-face {
+            font-family: 'Manrope';
+            src: url('/fonts/Manrope/Manrope-Medium.eot') format('embedded-opentype'),
+                url('/fonts/Manrope/Manrope-Medium.woff2') format('woff2'),
+                url('/fonts/Manrope/Manrope-Medium.woff') format('woff'),
+                url('/fonts/Manrope/Manrope-Medium.ttf') format('truetype'),
+                url('/fonts/Manrope/Manrope-Medium.svg#Manrope') format('svg');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
 
-            @font-face {
-                font-family: 'Noto Serif';
-                src: url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.eot') format('embedded-opentype'),
-                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2') format('woff2'),
-                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff') format('woff'),
-                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.ttf') format('truetype'),
-                    url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.svg#NotoSerifDisplay') format('svg');
-                font-weight: 700;
-                font-style: normal;
-                font-display: swap;
-            }
+        @font-face {
+            font-family: 'Manrope';
+            src: url('/fonts/Manrope/Manrope-SemiBold.eot') format('embedded-opentype'),
+                url('/fonts/Manrope/Manrope-SemiBold.woff2') format('woff2'),
+                url('/fonts/Manrope/Manrope-SemiBold.woff') format('woff'),
+                url('/fonts/Manrope/Manrope-SemiBold.ttf') format('truetype'),
+                url('/fonts/Manrope/Manrope-SemiBold.svg#Manrope') format('svg');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
 
-            body {
-                font-size: 16px;
-                color: #000000;
-                font-family: 'Manrope', sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                line-height: 1;
-            }
-        </style>
+        @font-face {
+            font-family: 'Noto Serif';
+            src: url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.eot') format('embedded-opentype'),
+                url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff2') format('woff2'),
+                url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.woff') format('woff'),
+                url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.ttf') format('truetype'),
+                url('/fonts/NotoSerifDisplay/NotoSerifDisplay-Bold.svg#NotoSerifDisplay') format('svg');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
 
-        <link rel="stylesheet" href="/src/sass/app.scss" />
-    </head>
+        body {
+            font-size: 16px;
+            color: #000000;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1;
+        }
+    </style>
 
-    <body>
-        <div id="app">
-            Започни работа тук. Успех! :)
-        </div>
+    <link rel="stylesheet" href="/src/sass/app.scss" />
+</head>
 
-        <script type="module" src="/src/js/main.js"></script>
-    </body>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <picture>
+                        <source srcset="/images/krystallino-logo.png" />
+                        <img src="/images/krystallino-logo.png" alt="">
+                    </picture>
+                </li>
+                <li><a href="#"></a></li>
+                <li><a href="#">Нашите десерти</a></li>
+                <li><a href="#">Отзиви</a></li>
+                <li><a href="#">За поръчки и запитвания</a></li>
+                <li><a href="#">Препоръки</a></li>
+                <li><a href="#">Медиите за нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="text">
+                <div class="main-text">Десерти Kristallino - където <span class="black">изкуствот</span> среща <span
+                        class="black">десерта</span>
+                </div>
+                <div class="desc-text">Отдайте се на нашите изящни творения, изработени със страст и прецизност от
+                    световноизвестния сладкар Кристалин Илчев. Разгледайте нашите иновативни gecepmu, koumо обещават да
+                    измамят вкусовите Ви рецептори и да запалят сетивата Bu./div>
+                </div>
+                <div class="buttons">
+                    <button class="req">Направи заявка</button>
+                    <button class="more">Научи повече</button>
+                </div>
+        </section>
+
+        <section class="food">
+            <div class="group-image"></div>
+            <div class="card-wrapper">
+                <article class="card">
+                    <picture class="main-img">
+                        <source
+                            srcset="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png">
+                        <img src="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png"
+                            alt="">
+                    </picture>
+                    <picture class="subtitle">
+                        <source srcset="/images/Sub Title Element.png">
+                        <img src="/images/Sub Title Element.png" alt="">
+                    </picture>
+                    <h1>Ягоди и босилек</h1>
+                    <p>Насладете се на перфектния баланс на кремообразно кисело мляко, хрупкави орехи и сладък мед в
+                        този райcku gecepm.</p>
+                    <button>Научете повече</button>
+                </article>
+
+                <article class="card">
+                    <picture class="main-img">
+                        <source
+                            srcset="/images/Firefly Yogurt, Walnuts and Honey desert on a white background 1445.png">
+                        <img src="/images/Firefly Yogurt, Walnuts and Honey desert on a white background 1445.png"
+                            alt="">
+                    </picture>
+                    <picture class="subtitle">
+                        <source srcset="/images/Sub Title Element.png">
+                        <img src="/images/Sub Title Element.png" alt="">
+                    </picture>
+                    <h1>Орехи и мед</h1>
+                    <p>Сладкарски шедьовър, Вдъхновен от традиционния българсku десерт баклава, съчетаващ хрупкави орехи
+                        и сладък мед.</p>
+                    <button>Научете повече</button>
+                </article>
+
+                <article class="card">
+                    <picture class="main-img">
+                        <source srcset="/images/Firefly Bacon and blueberry desert on a white background 11617.png">
+                        <img src="/images/Firefly Bacon and blueberry desert on a white background 11617.png" alt="">
+                    </picture>
+                    <picture class="subtitle">
+                        <source srcset="/images/Sub Title Element.png">
+                        <img src="/images/Sub Title Element.png" alt="">
+                    </picture>
+                    <h1>Бекон и боровинки</h1>
+                    <p>Съчетание на солен бекон и сладки боровинки, което ще Ви изненада и ще ви остави с усещане за
+                        изтънчен вкус.</p>
+                    <button>Научете повече</button>
+                </article>
+
+                <article class="card">
+                    <picture class="main-img">
+                        <source
+                            srcset="/images/Firefly Crispy sunflower seed with cream desert on a white background 1445.png">
+                        <img src="/images/Firefly Crispy sunflower seed with cream desert on a white background 1445.png"
+                            alt="">
+                    </picture>
+                    <picture class="subtitle">
+                        <source srcset="/images/Sub Title Element.png">
+                        <img src="/images/Sub Title Element.png" alt="">
+                    </picture>
+                    <h1>Хрупкави слънчогледови семки</h1>
+                    <p>Сладкарски шедьовър, Вдъхновен от традиционния български десерт баклава, съчетаващ хрупкави орехи
+                        и сладък мед.</p>
+                    <button>Научете повече</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="chef">
+            <article class="chef-wrapper">
+                <div class="img-left">
+                    <picture>
+                        <source srcset="/images/Rectangle 22.png" />
+                        <img src="/images/Rectangle 22.png" alt="chef">
+                    </picture>
+                </div>
+                <div class="text-right">
+                    <h1>Chef Кристалин</h1>
+                    <picture class="subtitle">
+                        <source srcset="/images/Sub Title Element.png">
+                        <img src="/images/Sub Title Element.png" alt="">
+                    </picture>
+                    <p>Шеф Кристалин Илчев е световноизвестен сладкар, известен със своите иновативни и артистични
+                        творения на десерти. С повече от две десетилетия опит, той съчетава традиционни техники с
+                        модерни вкусове, завладявайки кулинарния свят чрез своята марка Krystallino. Уникалните десерти
+                        на шеф Кристалин, като кисело мляко с орехи и мед или бекон с боровинки, отразяват неговата
+                        отдаденост на качеството и креативността, спечелвайки ŭ международно признание и лоялни
+                        последователи.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="receipt">
+            <div class="top">
+                <h1>Десерти</h1>
+                <picture class="subtitle">
+                    <source srcset="/images/Sub Title Element.png">
+                    <img src="/images/Sub Title Element.png" alt="">
+                </picture>
+                <p>внимателно селектирани вкусове</p>
+            </div>
+
+            <div class="receipt-wrapper">
+                <div class="product">
+                    <div class="product-img">
+                        <picture>
+                            <source
+                                srcset="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png">
+                            <img src="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png"
+                                alt="">
+                        </picture>
+                    </div>
+
+                    <div class="product-text">
+                        <h1>Ягоди и босилек</h1>
+                        <p>Кремообразен десерт на основата на кисело мляко, наситен със земното богатство на орехи и
+                            сладостта на меда, създавайки хармонична комбинация от вкусове и текстури.
+                            Основни съставки: кисело мляко, орехи, мед, захар, желатин (за консистенция), Ванилов
+                            екстрakm</p>
+                    </div>
+
+                    <div class="vitamins">
+                        <div class="mini">
+                            <p>КАЛОРИИ</p>
+                            <h1>200</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ОБЩО МАЗНИНИ</p>
+                            <h1>12g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>НАСИТЕНИ МАЗНИНИ</p>
+                            <h1>3g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ОБЩО ВЪГЛЕХИДРАТИ</p>
+                            <h1>20g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ПРОТЕИН</p>
+                            <h1>6g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ЗАХАРИ</p>
+                            <h1>15g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>НАТРИЙ</p>
+                            <h1>50mg</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ХОЛЕСТЕРОЛ</p>
+                            <h1>15mg</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <picture>
+                            <source
+                                srcset="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png">
+                            <img src="/images/Firefly Strawberry and basil with cream desert on a white background 59251.png"
+                                alt="">
+                        </picture>
+                    </div>
+
+                    <div class="product-text">
+                        <h1>Ягоди и босилек</h1>
+                        <p>Кремообразен десерт на основата на кисело мляко, наситен със земното богатство на орехи и
+                            сладостта на меда, създавайки хармонична комбинация от вкусове и текстури.
+                            Основни съставки: кисело мляко, орехи, мед, захар, желатин (за консистенция), Ванилов
+                            екстрakm</p>
+                    </div>
+
+                    <div class="vitamins">
+                        <div class="mini">
+                            <p>КАЛОРИИ</p>
+                            <h1>200</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ОБЩО МАЗНИНИ</p>
+                            <h1>12g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>НАСИТЕНИ МАЗНИНИ</p>
+                            <h1>3g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ОБЩО ВЪГЛЕХИДРАТИ</p>
+                            <h1>20g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ПРОТЕИН</p>
+                            <h1>6g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ЗАХАРИ</p>
+                            <h1>15g</h1>
+                        </div>
+                        <div class="mini">
+                            <p>НАТРИЙ</p>
+                            <h1>50mg</h1>
+                        </div>
+                        <div class="mini">
+                            <p>ХОЛЕСТЕРОЛ</p>
+                            <h1>15mg</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interest">
+                <p>Ако имате интерес към нашите вкусове можете да се свържете с нас, за да уточним цени, методи на достава и условия за съхранение.</p>
+                <button class="req">Направи заявка</button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="rev-left">
+                <picture>
+                    <h1>Отзиви от клиенти</h1>
+                    <source srcset="/images/Firefly Walnuts on a white background 1445.png">
+                    <img src="/images/Firefly Walnuts on a white background 1445.png" alt="Walnuts">
+                </picture>
+                <picture class="subtitle">
+                    <source srcset="/images/Sub Title Element.png">
+                    <img src="/images/Sub Title Element.png" alt="">
+                </picture>
+            </div>
+
+            <div class="rev-right">
+                <div class="rev-card">
+                    <p> <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt="">
+                        <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""></p>
+
+                    <p></p>
+                </div>
+                <div class="rev-card">
+                    <p> <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt="">
+                        <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""></p>
+                    <p></p>
+                </div>
+                <div class="rev-card">
+                    <p> <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt="">
+                        <img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""><img src="/images/star.svg" alt=""></p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
