@@ -1,0 +1,51 @@
+.qna {
+    background-color: rgb(251, 244, 223);
+}
+
+.qna .qna-sec {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.qna .qna-left {
+    margin: 0 8em;
+    flex: 1 1 50%;
+}
+
+.qna .qna-right {
+    margin: 0 10em;
+    flex: 1 1 20%;
+}
+
+.qna .qna-right form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 238, 205);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.qna .qna-right form label {
+    color: black;
+    font-size: 20px;
+    padding: 1em 0;
+}
+
+.qna .qna-right form input {
+    height: 2em;
+    width: 25em;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+.qna .qna-right form input::placeholder {
+    font-size: 15px;
+}
+
+.qna .qna-right form button {
+    align-self: flex-start;
+    margin: 2em 0;
+} 

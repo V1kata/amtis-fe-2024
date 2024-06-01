@@ -8,7 +8,7 @@
     margin: 0 auto;
 }   
 
-.receipt .top {
+.top {
     text-align: center;
 }
 
@@ -83,8 +83,7 @@
     flex-wrap: nowrap;
     background-color: rgb(249, 238, 205);
     width: 80vw;
-    margin-top: 3em;
-    /* padding: 0 1.5em; */
+    margin: 2em 0;
 }
 
 .receipt .interest p {

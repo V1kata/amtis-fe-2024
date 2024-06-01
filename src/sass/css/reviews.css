@@ -1,0 +1,35 @@
+.reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
+
+.rev-left {
+    flex: 1 1 50%;
+    position: relative;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.rev-left h1 {
+    font-size: 50px;
+}
+
+.rev-left .wallnut img {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    width: 20%;
+    margin: auto;
+}
+
+.rev-right {
+    flex: 1 1 50%;
+}
+
+.reviews .rev-right .rev-card p img {
+    width: 16px;
+    height: 16px;
+}
