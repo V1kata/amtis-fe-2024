@@ -1,0 +1,50 @@
+.food {
+    margin-top: 4em;
+    background-image: url('../.././images/Group.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10em;
+    gap: 10px;
+}
+
+.card {
+    flex: 1 2 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 10%;
+    background-color: #fbf4df;
+}
+
+.card .main-img img, .card h1, .card p, .card .subtitle img {
+    position: relative;
+    top: -2em;
+}
+
+.card .main-img img {
+    margin: auto;
+    width: 90%;
+}
+
+.card button {
+    color: rgb(155, 88, 46);
+    background: none;
+    border: none;
+}
+
+@media (max-width: 1000px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 0;
+    }
+}
