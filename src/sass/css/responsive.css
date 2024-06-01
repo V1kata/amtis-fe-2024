@@ -7,6 +7,12 @@
         display: none;
     }
 
+    header ul {
+        flex-wrap: wrap;
+        
+        margin: 0.5em;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -24,13 +30,22 @@
         flex-wrap: wrap;
         flex-direction: column;
         position: relative;
-        left: 50%;
         width: 100%;
     }
 
     .food .card-wrapper .card {
         flex: 1 0 auto;
+        width: 100%;
         justify-content: space-evenly;
+    }
+
+    .card .main-img img {
+        margin: auto;
+        width: 50%;
+    }
+
+    .receipt .interest {
+        flex-direction: column;
     }
 
     .receipt .receipt-wrapper .product {
@@ -46,9 +61,14 @@
         left: 20%;
     }
 
-    .qna .qna-left {
-        font-size: 15px;
+    .qna .top p {
         text-wrap: wrap;
+    }
+
+    .qna .qna-left {
+        text-wrap: wrap;
+        flex: 0 0 0;
+        width: 100%;
     }
 
     .qna .qna-sec {
@@ -59,5 +79,9 @@
     .chef .chef-wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .reviews, .qna, .media {
+        margin-top: 5em;
     }
 }
